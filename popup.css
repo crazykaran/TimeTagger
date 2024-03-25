@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 380px;
+  height: 480px;
+  color: #314d3e;
+}
+
+.bookmark {
+  display: flex;
+  margin: 15px 10px;
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  background-color: #d7d8dd78;
+  border-bottom: 2px solid #34374978;
+  padding: 3px;
+  min-height: 30px;
+}
+.bookmark:hover{
+  background-color: #aaabb278;
+}
+
+.bookmark-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 2px;
+}
+
+.bookmark-controls {
+  flex: auto;
+  text-align: right;
+}
+
+.videoContainer{
+  margin: 15px 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: #d7d8dd78;
+  border-bottom: 2px solid #34374978;
+}
+.videoContainer:hover{
+  background-color: #aaabb278;
+}
+.videoTitle{
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  font-size: large;
+}
+.bookmarkElement{
+  padding: 2px 30px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.heading{
+  position: sticky;
+    top: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  height: 15%;
+  font-size: xx-large;
+  background-color: #6204ff;
+}
+.restBody{
+  height: 100%;
+}
+
+.material-symbols-outlined {
+  color: white;
+  margin-right:10px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48
+}
+.controlElement{
+  color: black;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.noText{
+  position: relative;
+  text-align: center;
+  top: 150px;
+  font-size: 20px;
+}
