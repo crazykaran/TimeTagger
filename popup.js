@@ -118,6 +118,7 @@ const viewAllBookmarks=()=>{
       del.innerText = "delete";
       del.addEventListener("click", ()=>{
         chrome.storage.sync.remove(row,()=>{
+          videoContainer.remove();
           console.log("item removed");
         });
       });
