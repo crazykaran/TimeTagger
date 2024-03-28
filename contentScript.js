@@ -22,7 +22,7 @@
       videoLink:window.location.href,
       desc: " ("+ getTime(currentTime)+")",
     };
-    console.log(currentTime);
+    // console.log(currentTime);
     currentVideoBookmarks = await fetchBookmarks();
 
     chrome.storage.sync.set({
@@ -31,10 +31,8 @@
   };
 
   const newVideoLoaded = async () => {
-    const bookmarkBtnExists = document.getElementsByClassName("bookmark-btn")[0];
-    
     currentVideoBookmarks = await fetchBookmarks();
-
+    const bookmarkBtnExists = document.getElementsByClassName("bookmark-btn")[0];
     if (!bookmarkBtnExists) {
       const bookmarkBtn = document.createElement("img");
 
@@ -44,7 +42,6 @@
 
       youtubeRightControls = document.getElementsByClassName("ytp-right-controls")[0];
       youtubePlayer = document.getElementsByClassName('video-stream')[0];
-      console.log(youtubeRightControls);
       youtubeRightControls && youtubeRightControls.prepend(bookmarkBtn);
       bookmarkBtn.addEventListener("click", addNewBookmarkEventHandler);
     }
